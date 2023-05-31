@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("image/dog.jpg") no-repeat fixed center / cover ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.random-image{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.random-image  .dog{
+  width: 80%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.random-image  .dog img{
+  height: 80%;
+  width: 80%;
+}
+
+.random-image .select{
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.random-image .select a{
+  text-decoration: none;
+    font-size: 30px;
+    color: white;
+    margin: 12px;
+    border: 2px solid #009688;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 17px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.random-image .select a::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: -100%;
+  background-color: #009688;
+  border-radius: 20px;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.random-image .select a:hover::before{
+  left: 0;
+}
+
+.random-image .select a:hover{
+  border: none;
+}
+
+.breed-wrapper{
+  height: 100vh;
+  background: url("image/dog2.jpg") no-repeat fixed center / cover ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-breed{
+  height: 95%;
+  width: 45%;
+  background-color: white;
+}
+
+
+.search-breed .breed-list{
+  background-color: lightcoral;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.search-breed select{
+  height: 35px;
+  width: 37%;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.search-breed .breed-image button{
+  background-color: antiquewhite;
+  height: 27px;
+  width: 97px;
+  font-size: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+  border: none;
+}
+
+.search-breed .breed-image button:hover{
+  background-color: black;
+  color: white;
+}
+
+.breed-image{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.breed-image .dog{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.breed-image .get-button{
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.breed-image img{
+  width: 90%;
+  height: 90%;
+}
+
+.back-to-home{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+.back-to-home a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 27px;
+  width: 134px;
+  border-radius: 20px;
+}
+
+.back-to-home a:hover{
+  background-color: darkgoldenrod;
+  color: white;
+}
+
+.breed-list button{
+  height: 39px;
+  width: 103px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 17px;
+  border: 2px solid;
+}
